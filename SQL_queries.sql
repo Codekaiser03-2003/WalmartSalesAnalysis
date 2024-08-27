@@ -76,11 +76,12 @@ FROM sales;
 SELECT count(DISTINCT product_line) 
 FROM sales;
 
--- What is the most selling product line
-SELECT SUM(quantity) as qty, product_line
-FROM sales
-GROUP BY product_line
-ORDER BY qty DESC;
+-- What is the most common payment method
+select payment, count(payment) as cnt
+from sales 
+group by payment
+order by cnt desc;
+
 
 -- What is the most selling product line
 SELECT SUM(quantity) as qty, product_line
