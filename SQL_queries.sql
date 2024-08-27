@@ -44,10 +44,6 @@ SET time_of_day = (
 
 
 -- Add day_name column
-SELECT
-	date,
-	DAYNAME(date)
-FROM sales;
 
 ALTER TABLE sales ADD COLUMN day_name VARCHAR(10);
 
