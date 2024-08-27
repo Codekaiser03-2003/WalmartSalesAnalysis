@@ -65,9 +65,7 @@ SET month_name = MONTHNAME(date);
 SELECT DISTINCT city FROM sales;
 
 -- In which city is each branch?
-SELECT 
-	DISTINCT city,
-    branch
+SELECT DISTINCT city, branch
 FROM sales;
 
 -- --------------------------------------------------------------------
@@ -75,10 +73,7 @@ FROM sales;
 -- --------------------------------------------------------------------
 
 -- How many unique product lines does the data have?
-SELECT
-	DISTINCT product_line
-FROM sales;
-
+SELECT DISTINCT product_lineFROM sales;
 
 -- What is the most selling product line
 SELECT
