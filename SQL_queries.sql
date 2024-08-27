@@ -73,7 +73,8 @@ FROM sales;
 -- --------------------------------------------------------------------
 
 -- How many unique product lines does the data have?
-SELECT DISTINCT product_line FROM sales;
+SELECT count(DISTINCT product_line) 
+FROM sales;
 
 -- What is the most selling product line
 SELECT SUM(quantity) as qty, product_line
