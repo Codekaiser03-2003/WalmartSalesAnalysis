@@ -141,6 +141,8 @@ $ \text{Gross Margin Percentage} = \frac{\text{gross income}}{\text{total revenu
 
 ## Code
 
+Rest of the code is the file - SQL_queries.sql
+
 ```sql
 -- Create database
 CREATE DATABASE IF NOT EXISTS walmartSales;
