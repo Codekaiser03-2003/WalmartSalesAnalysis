@@ -73,7 +73,7 @@ FROM sales;
 -- --------------------------------------------------------------------
 
 -- How many unique product lines does the data have?
-SELECT DISTINCT product_lineFROM sales;
+SELECT DISTINCT product_line FROM sales;
 
 -- What is the most selling product line
 SELECT
